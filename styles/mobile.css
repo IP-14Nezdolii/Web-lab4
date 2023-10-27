@@ -1,0 +1,62 @@
+
+@media screen and (max-width: 1000px) {
+  
+    body {
+      align-items:flex-start;
+    }
+    
+    .main{
+      grid-template-columns: 840px;
+      grid-template-rows: repeat(6, 630px);
+      grid-gap: 60px;
+      padding-top: 7%;
+      padding-bottom: 7%;
+    }
+    
+    button{
+      height: 10%;
+      width: 40%;
+      margin: 10%;
+      margin-top: 0px;
+      font-size: 2.5vw;
+    }
+    
+    button:hover {
+      border: 5px solid black;
+      }
+    
+    .header1, .header2, .textbox1, .textbox2{
+      padding: 8%;
+    }
+    
+    .header1,.header2{
+      font-size: 6vw;
+      padding-bottom: 0px;
+      height: 22%;
+    }
+
+    .header2{
+      font-size: 5vw;
+      height: 7%;
+    }
+    
+    .textbox1, .textbox2{
+      padding-top: 5%;
+      font-size: 4vw;
+      width: 84%;
+      height: 50%;
+    }
+    
+    .textbox2{
+    height: 54%;
+    }
+    
+    .block4 {
+      border: 10px solid rgb(131, 234, 201);
+      font-size: 7vw;
+    }
+ 
+    .block7 {
+      height: 900px;
+    }
+}

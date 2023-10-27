@@ -1,0 +1,157 @@
+ 
+ html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+ body {
+    overflow: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+div {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+ }
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+button{
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+}
+
+ .main{ 
+    display: grid;
+ }
+
+.block1 { 
+    background-color: rgb(66, 206, 249); 
+  }
+.block2 {
+    background-color: rgb(255, 189, 103);
+  }
+.block3 {
+    background-color: rgb(255, 189, 103);
+  }
+.block4 {
+    display: grid;
+    background-color: white;
+    color: rgb(131, 234, 201);
+    text-align: center;
+    text-transform: uppercase;
+    align-content: center;
+  }
+.block5 {
+    background-color: rgb(255, 189, 103);
+  }
+.block6 {
+    background-color: rgb(255, 189, 103);
+}
+.block7 {
+    background-color: rgb(66, 206, 249);
+}
+
+@media screen and (min-width : 1000px) {
+
+  div{
+    width: 280px;
+    height: 210px;
+  }
+
+  .main{
+    grid-template-areas: 
+            "b1 b2 b3 "
+            "b1 b4 b5 "
+            "b6 b7 b7 "
+            ;
+        
+    width: 880px;
+    height: 670px;
+    grid-gap: 20px;
+  }
+
+  .header1, .header2, .textbox1, .textbox2{
+    padding: 20px;
+  }
+
+  .header1,.header2{
+    font-size: 25px;
+    padding-bottom: 0px;
+    height: 55px;
+    width: 240px;
+  }
+  .header2{
+    font-size: 20px;
+    height: 28px;
+  }
+
+  .textbox1{
+    width: 240px;
+    height: 150px;
+  }
+
+  .textbox2{
+    width: 540px;
+    height: 100px;
+  }
+
+  .textbox1, .textbox2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  button{
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+    margin-top: 0px;
+    font-size: 10px;
+  }
+  button:hover {
+  border: 1px solid black;
+  }
+
+  .block1 {
+    grid-area: b1;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .block2 {
+    grid-area: b2;
+  }
+  .block3 {
+    grid-area: b3;
+  }
+  .block4 { 
+    grid-area: b4;
+    outline: 2px solid rgb(131, 234, 201);
+    font-size: 25px;
+    width: 240px;
+    height: 170px;
+    padding: 20px;
+  }
+  .block5 {
+    grid-area: b5;
+  }
+  .block6 {
+    grid-area: b6;
+  }
+  .block7 {
+    grid-area: b7;
+    width: 580px;
+  }
+  }
+
